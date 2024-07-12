@@ -8,7 +8,20 @@
 }
 
 body {
-  background: #fbc02d;
+  background:#ffffff;
+}
+
+.wave-header{
+  min-height: 100vh;
+  width: 100%;
+  background:#94b973;
+  position: relative;
+}
+
+svg{
+  position: relative; 
+  bottom: 0;
+  left:0;
 }
 
 .header {
@@ -17,7 +30,7 @@ body {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background: #4527a0;
+  background: #ffffff;
   padding: 0.25px;
   transition: 0.30 s;
 }
@@ -51,7 +64,7 @@ body {
 }
 
 .menu li a{
-  color:#fff;
+  color:#000000;
   text-decoration: none;
   display: block;
   padding: 40px 25px;
@@ -153,7 +166,7 @@ body {
     position: fixed;
     top: 0;
     right: -300px;
-    background: #4527a0;
+    background: #94b973;
     width: 300px;
     height: 100%;
     padding-top: 65px;
@@ -195,10 +208,12 @@ body {
 }
 
 .content .content8x .btn{
-  background:#4527a0;
-  color: #fff;
+  position: relative;
+  border-radius: 0.25cm 0.25cm;
+  background:#F5A68B;
+  color: #ffffff;
   text-decoration: none;
-  padding: 8px 15px;
+  padding: 8px 8px 8px 8px;
   font-weight: 500;
   margin: 30px 10px;
   transition: 0.5s;
@@ -207,7 +222,7 @@ body {
 .content .content8x .btn .hover{
   box-shadow: 0 -5px 0px #fff inset, 
   500px 0 0 rgba(255,255,255,0.03)inset;
-  padding: 35px 25px 45px 25px;
+  padding: 45px 25px 45px 25px;
   cursor: pointer;
   opacity: 0;
 }
