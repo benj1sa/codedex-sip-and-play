@@ -1,4 +1,4 @@
-:root {
+/*:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -138,4 +138,23 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+*/
+
+.latte-container {
+  border: 5px solid black;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+}
+
+.testing-container {
+  border: 5px outset black;
+  text-align: center;
+}
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
 }
