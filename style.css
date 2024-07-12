@@ -135,6 +135,8 @@ body {
 
 
 
+
+
 @media screen and (max-width: 992px) {
   .hamburger, 
   .toggle-menu {
@@ -168,14 +170,98 @@ body {
   }
 }
 
-/*
+.content{
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.content .content8x{
+  max-width: 500px;
+}
+
+.content .content8x h1{
+  font-size: 1000%;
+  color: #000;
+  line-height: 85%;
+  margin: 0;
+}
+
+.content .content8x p{
+  font-size: 150%;
+  color: #000;
+  margin: 30px 10px;
+}
+
+.content .content8x .btn{
+  background:#4527a0;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: 500;
+  margin: 30px 10px;
+  transition: 0.5s;
+}
+
+.content .content8x .btn .hover{
+  box-shadow: 0 -5px 0px #fff inset, 
+  500px 0 0 rgba(255,255,255,0.03)inset;
+  padding: 35px 25px 45px 25px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.content .content8x{
+  max-width: 500px;
+}
+
+.content .content8x h1{
+  font-size: 1000%;
+  color: #000;
+  line-height: 85%;
+  margin: 0;
+}
+
+.content .content8x p{
+  font-size: 150%;
+  color: #000;
+  margin: 30px 10px;
+}
+
+.content .content8x .btn{
+  background:#4527a0;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-weight: 500;
+  margin: 30px 10px;
+  transition: 0.5s;
+}
+
+.content .content8x .btn .hover{
+  box-shadow: 0 -5px 0px #fff inset, 
+  500px 0 0 rgba(255,255,255,0.03)inset;
+  padding: 35px 25px 45px 25px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}/
-*/
+}
+
 
 .latte-container {
   /*border: 5px solid black;*/
