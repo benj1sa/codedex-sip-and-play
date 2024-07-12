@@ -8,20 +8,7 @@
 }
 
 body {
-  background:#ffffff;
-}
-
-.wave-header{
-  min-height: 100vh;
-  width: 100%;
-  background:#94b973;
-  position: relative;
-}
-
-svg{
-  position: relative; 
-  bottom: 0;
-  left:0;
+  background: #fcf4e7;
 }
 
 .header {
@@ -48,6 +35,7 @@ svg{
   display: flex;
   justify-content:space-between;
   align-items: center;
+  border: #000;
 }
 
 .menu {
@@ -64,7 +52,7 @@ svg{
 }
 
 .menu li a{
-  color:#000000;
+  color:#000;
   text-decoration: none;
   display: block;
   padding: 40px 25px;
@@ -74,7 +62,7 @@ svg{
 }
 
 .menu li a:hover{
-  box-shadow: 0 -5px 0px #fff inset, 
+  box-shadow: 0 -5px 0px #000 inset, 
   500px 0 0 rgba(255,255,255,0.03)inset;
   padding: 35px 25px 45px 25px;
 }
@@ -83,7 +71,7 @@ svg{
   position:relative;
   width: 30px;
   height: 4px;
-  background: #fff;
+  background: #000;
   border-radius: 10px;
   cursor: pointer;
   z-index: 2;
@@ -96,7 +84,7 @@ svg{
   position: absolute;
   height: 4px;
   right: 0;
-  background: #fff;
+  background: #000;
   border-radius: 10 px;
   transition: 0.3s;
 }
@@ -146,10 +134,6 @@ svg{
   box-shadow: -20px 0 40px rgba(0,0,0,0.3);
 }
 
-
-
-
-
 @media screen and (max-width: 992px) {
   .hamburger, 
   .toggle-menu {
@@ -166,7 +150,7 @@ svg{
     position: fixed;
     top: 0;
     right: -300px;
-    background: #94b973;
+    background: #000000;
     width: 300px;
     height: 100%;
     padding-top: 65px;
@@ -188,17 +172,20 @@ svg{
   display: flex;
   justify-content:space-around;
   align-items: center;
+  margin-top: 20px;
+
 }
 
 .content .content8x{
   max-width: 500px;
+  padding-left: 6%;
 }
 
 .content .content8x h1{
   font-size: 1000%;
   color: #000;
   line-height: 85%;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .content .content8x p{
@@ -208,10 +195,8 @@ svg{
 }
 
 .content .content8x .btn{
-  position: relative;
-  border-radius: 0.25cm 0.25cm;
-  background:#F5A68B;
-  color: #ffffff;
+  background:#94b973;
+  color: #fff;
   text-decoration: none;
   padding: 8px 8px 8px 8px;
   font-weight: 500;
@@ -227,12 +212,20 @@ svg{
   opacity: 0;
 }
 
-
-/*#app {
+#app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}/
+}
 
+.latte-container {
+  /*border: 5px solid black;*/
+  text-align: end;
+  justify-content: end;
+  padding-right: 5%;
+}
 
+.transition {
+  width: 100%;
+}

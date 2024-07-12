@@ -2,24 +2,41 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
+const loader = new GLTFLoader();
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('canvas') });
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(new THREE.Color(0xffffff)); // hex for white
+renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+renderer.setClearColor(new THREE.Color(0xfcf4e7)); // hex for white
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true; // enable damping
 
-const loader = new GLTFLoader();
+// Lighting
+const ambientLight = new THREE.AmbientLight(0x333333, 50);
+scene.add(ambientLight);
 
-let shiba;
+const spotLight = new THREE.SpotLight()
+spotLight.position.set(0.55, 1.5, 0.55)
+spotLight.castShadow = true
+spotLight.angle = 0.5
+spotLight.distance = 2.7
+spotLight.penumbra = 1
+spotLight.decay = 2
+spotLight.intensity = 7
+scene.add(spotLight)
+//const spotLightHelper = new THREE.SpotLightHelper(spotLight)
+//scene.add(spotLightHelper)
+
+// Load Latte
+let latte;
 loader.load(
-    '/shiba.glb', // Replace with the path to your Shiba model
+    '/cafe_latte_with_art.glb',
     function (gltf) {
-        shiba = gltf.scene;
-        scene.add(shiba);
+        latte = gltf.scene;
+        scene.add(latte);
     },
     undefined,
     function (error) {
@@ -27,7 +44,8 @@ loader.load(
     }
 );
 
-camera.position.z = 5;
+// Set camera position
+camera.position.set(0.293,0.731,0.731)
 
 function animate() {
   requestAnimationFrame(animate);
