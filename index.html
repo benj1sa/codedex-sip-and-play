@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
-      .myDiv {
-        border: 5px outset red;
-        background-color: lightblue;    
-        text-align: center;
-      }
-    </style>
-    <meta charset="UTF-8" />
-    <link
+<head>
+  <meta charset="UTF-8" />
+  <meta name = "viewport" content="width=device-width", initial-scale="1.0">
+    <!--link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐕</text></svg>"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Three.js Project</title>
-  </head>
-  <body>
-  <!-- Simulate a smartphone / tablet -->
-  <div class="mobile-container">
+    /-->
+  <link rel="stylesheet" href="style.css">
+  <title>Three.js Project</title>
+</head>
+<body>
 
-  <!-- Top Navigation Menu -->
-  <div class="topnav">
-    <a href="#home" class="active">Logo</a>
-    <div id="myLinks">
-      <a href="#about">About</a>
-      <a href="#reservations">Reservations</a>
-      <a href="#mtq schedule">MTQ Schedule</a>
-      <a href="#our board game collection">Our Board Game Collection</a>
-      <a href="#menu">Menu</a>
-      <a href="#feedback">Feedback</a>
-      <a href="#gift cards">Gift Cards</a>
-      <a href="#press">Presss</a>
+  <header class = "header">
+    <div class = "logo">
+      <a href="#">
+        <img src="Sipnplay board game.png" alt="">
+      </a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  
-  <!-- End smartphone / tablet look -->
-  </div>
-  
-   
-    <script type="module" src="/main.js"></script>
-    <div class="latte-container">
-      <canvas></canvas>
+    
+    <div class="navigation">
+      
+      <input type = "checkbox" 
+      class="toggle-menu">
+      <div class="hamburger"></div>
+      
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Reservations</a></li>  
+        <li><a href="#">MTQ Schedule</a></li>
+        <li><a href="#">Our Board Game Collection</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
     </div>
-  </body>
+  </header>
+
+    <!--script type="module" src="/main.js"></script>
+    <div id="canvas-container">
+    
+      <canvas></canvas-->
+</body>
 </html>
