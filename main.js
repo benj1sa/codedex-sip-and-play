@@ -8,8 +8,8 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('canvas') });
-//renderer.setSize(container.innerWidth, container.innerHeight);
-renderer.setClearColor(new THREE.Color(0xffffff)); // hex for white
+renderer.setSize(window.innerWidth/1.5, window.innerHeight/1.5);
+renderer.setClearColor(new THREE.Color(0xf7cb46)); // hex for white
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true; // enable damping
@@ -45,7 +45,7 @@ loader.load(
 );
 
 // Set camera position
-camera.position.set(0.6,1.5,1.5)
+camera.position.set(0.45,1.125,1.125)
 
 function animate() {
   requestAnimationFrame(animate);

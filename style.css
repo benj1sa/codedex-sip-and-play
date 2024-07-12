@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #fbc02d;
+  background: #f7cb46;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background: #4527a0;
+  background: #000000;
   padding: 0.25px;
   transition: 0.30 s;
 }
@@ -151,7 +151,7 @@ body {
     position: fixed;
     top: 0;
     right: -300px;
-    background: #4527a0;
+    background: #000000;
     width: 300px;
     height: 100%;
     padding-top: 65px;
@@ -177,21 +177,8 @@ body {
 }/
 */
 
-
 .latte-container {
-  border: 5px solid black;
-  text-align: center;
-  height: 500px;
-  width: 500px;
-}
-
-.testing-container {
-  border: 5px outset black;
-  text-align: center;
-}
-
-.myDiv {
-  border: 5px outset red;
-  background-color: lightblue;    
-  text-align: center;
+  /*border: 5px solid black;*/
+  text-align: end;
+  justify-content: end;
 }
